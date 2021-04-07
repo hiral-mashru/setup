@@ -16,7 +16,7 @@ https://github.com/hiral-mashru/setup/blob/main/setup-doc.pdf
 
 •	It provides the feature for api documentation.
 
-•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically.
+•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically, using `npm run swagger` command, developer can use swagger configuration and setup will provide api documentation automatically.
 
 •	It shows pending migration files if any and asks for migration.
 
@@ -269,7 +269,7 @@ err.status = 500; next(err);
 
 •	If you want to see the req-body or req-headers which are being passed when calling the url, you can write that in config.json file of config folder.
 
-•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically.
+•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically, using `npm run swagger` command, developer can use swagger configuration and setup will provide api documentation automatically.
 
 #	TODOs
 •	We could make more commands for creating functions, services, crons.
