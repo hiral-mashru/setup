@@ -80,11 +80,11 @@ require('../core/connection').getSequelize()
       ///////////////////////////////////////////////////////////////////////////
       try{
           for(let key in routes.public){    
-              app[routes.public[key].method](routes.public[key].path, (routes.public[key].middleware),routes.public[key].globalMiddleware,routes.public[key].action);
+              app[routes.public[key].method](routes.public[key].path, (routes.public[key].middlewares),routes.public[key].globalMiddleware,routes.public[key].action);
           }
 
           for(let key in routes.protected){
-              app[routes.protected[key].method](routes.protected[key].path, routes.protected[key].middleware, routes.protected[key].globalMiddleware, routes.protected[key].action);
+              app[routes.protected[key].method](routes.protected[key].path, routes.protected[key].middlewares, routes.protected[key].globalMiddleware, routes.protected[key].action);
           }
       } catch(err){
           console.log(chalk.red("ERROR:")+err)
