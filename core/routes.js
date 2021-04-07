@@ -56,10 +56,10 @@ function looping(apii,rr,routes, publicRoutes, protectedRoutes){
             rr.action = func;
 
             //middleware
-            if('middleware' in rr && Array.isArray(rr.middleware)){
+            if('middlewares' in rr && Array.isArray(rr.middlewares)){
                 var middlewareFun = []
                 var middleware = []
-                for(let a of rr.middleware) {
+                for(let a of rr.middlewares) {
                     if(!(a.includes('.'))) { 
                         console.log(chalk.black.bgYellowBright('WARNING:')+`Global Middleware ${rr.globalMiddleware} is not properly defined in ${__dirname}\\..\\api\\${apii}\\routes.json`) 
                         return
@@ -71,17 +71,17 @@ function looping(apii,rr,routes, publicRoutes, protectedRoutes){
                         }
                         var [middlewareName, middlewareFunName] = middlewareArr
                         middleware.push(middlewareName)
-                        if(!(require(`../api/${apii}/middleware/${middlewareName}`))[middlewareFunName]){
-                            console.log(chalk.black.bgYellowBright('WARNING:')+`Middleware ${middlewareFunName} doesn't exists in ${__dirname}\\..\\api\\${apii}\\middleware\\${middlewareName} file.`)
+                        if(!(require(`../api/${apii}/middlewares/${middlewareName}`))[middlewareFunName]){
+                            console.log(chalk.black.bgYellowBright('WARNING:')+`Middleware ${middlewareFunName} doesn't exists in ${__dirname}\\..\\api\\${apii}\\middlewares\\${middlewareName} file.`)
                             return
                         } else {
-                            middlewareFun.push((require(`../api/${apii}/middleware/${middlewareName}`))[middlewareFunName])
+                            middlewareFun.push((require(`../api/${apii}/middlewares/${middlewareName}`))[middlewareFunName])
                         }
                     }
                 }
-                rr.middleware = middlewareFun
+                rr.middlewares = middlewareFun
                 // console.log(rr.middleware)
-            } else { rr.middleware = [] }
+            } else { rr.middlewares = [] }
 
             //global middleware
             if('globalMiddleware' in rr && Array.isArray(rr.globalMiddleware)){
