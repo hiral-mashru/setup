@@ -12,6 +12,7 @@ module.exports = {
             status: 1,
             message: "Welcome",
             data: setup.functions["funcFile"]["func2"](params),
+            function: setup.moduleFunctions["RV"]["RV"](params),
             service: setup.services["RV"]["serve"]["service1"](params)
         })
     },
