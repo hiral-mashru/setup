@@ -24,6 +24,7 @@ require('../core/connection').getSequelize()
       require('dotenv').config()
       require('../core/functions')
       require('../core/moduleFunctions')
+      require('../core/moduleServices')
       require('../core/services')
       const chalk = require('chalk')
       const routes = require('../core/routes');

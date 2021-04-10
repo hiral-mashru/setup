@@ -13,7 +13,8 @@ module.exports = {
             message: "Welcome",
             data: setup.functions["funcFile"]["func2"](params),
             function: setup.moduleFunctions["RV"]["RV"](params),
-            service: setup.services["RV"]["serve"]["service1"](params)
+            service: setup.moduleServices["RV"]["serve"]["service1"](params),
+            serve: setup.services["service1"]["serve"]()
         })
     },
     globall: setup.functions["funcFile"]["func1"],
