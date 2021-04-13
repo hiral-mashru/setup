@@ -16,7 +16,7 @@ https://github.com/hiral-mashru/setup/blob/main/setup-doc.pdf
 
 •	It provides the feature for api documentation.
 
-•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically.
+•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically, using `npm run swagger` command, developer can use swagger configuration and setup will provide api documentation automatically.
 
 •	It shows pending migration files if any and asks for migration.
 
@@ -42,9 +42,17 @@ https://github.com/hiral-mashru/setup/blob/main/setup-doc.pdf
 
 =>	It creates middlewares. It asks for module name, in which developer wants to create a middleware and api name, in which this middleware will be used. Then it asks for middleware file name and function name (separated by ‘.’ and middlewares separated by ‘,’) and it creates files and functions in middlewares folder of given module’s folder, if file already exists, then it appends the data. It also adds the middlewares information provided by developer to routes.json.
 
-•	`framework globalMiddleware`
+•	`framework create-globalMiddleware`
 
 =>	It creates global middlewares. It asks for module name, in which developer wants to create a global middleware and api name, in which this global middleware will be used. Then it asks for global middleware file name and function name (separated by ‘.’ and middlewares separated by ‘,’) and it creates files and functions in middlewares folder, if file already exists, then it appends the data. It also adds the global middlewares information provided by developer to routes.json.
+
+•	`framework create-function`
+
+=>  It asks for module level functions and global level functions. In module level function, it provides available modules and asks for creating new module to create function in that module. In global level function, it will create functions folder in root and will create the file. Then it will ask for function’s file name and function name in filename.functionName format.
+
+•	`framework create-service`
+
+=>   It asks for module level services and global level services. In module level service, it provides available modules and asks for creating new module to create service in that module. In global level service, it will create services folder in root and will create the file. Then it will ask for service’s file name and function name in filename.functionName format.
  
 •	`framework db-config`
 
@@ -144,8 +152,14 @@ Ex:
 
 -> This file runs all the crons files of crons folder created by developer. If any cron is scheduled off and at particular time, it should get on and off, for that developer needs to write `setup.crons['FileName']['cronName']` to call a particular cron.
 
+	moduleFunctions.js
+
+-> It has configuration for calling function files from function folder of given module. Developer just needs to write `setup.moduleFunctions[‘folderName’][‘fileName’][‘functionName’]( params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
+
+
 	functions.js
--> It has configuration for calling function files from function folder. Developer just needs to write `setup.functions['folderName'][‘fileName']['functionName'](params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
+
+-> It has configuration for calling function files from function folder of root folder. Developer just needs to write `setup.functions[‘folderName’][‘fileName’][‘functionName’](params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
 
 	migrations.js
 
@@ -155,9 +169,13 @@ Ex:
 
 -> This file handles all the routes which are defined in routes.json and maps path to the api, middlewares, global middlewares which is declared in routes.json.
 
+	moduleServices.js
+
+-> This file handles the configurations of services of given module. Developer can access the service files in api via `setup.moduleServices[‘fileName’][‘serviceName’]`
+
 	services.js
 
--> This file handles the configurations of services. Developer can access the service files in api via `setup.services['fileName']['serviceName']`
+-> This file handles the configurations of services of root folder. Developer can access the service files in api via `setup.services[‘fileName’][‘serviceName’]` 
 
 •	crons
 
@@ -196,6 +214,10 @@ o	seeders
 
 ->	It holds middleware files which are common for many apis or modules. These middlewares are global middlewares.
 
+•	services
+
+->	This folder holds multiple files for service.
+
 •	src
 
 o	app.js
@@ -216,13 +238,20 @@ o	app.js
 
 #	Where global object is used
 
-•	`setup.functions['folderName']['fileName']['functionName'](params1,params2,…,paramsN)`
+•	`setup.functions[‘folderName’][‘fileName’][‘functionName’](params1,params2,…,paramsN)` 
+=>	 For importing the function from given path of functions folder of given module.
 
-=>	 For importing the function from given path of functions folder.
+•	`setup.moduleFunctions[‘folderName’][‘fileName’][‘functionName’] (params1,params2,…,paramsN)` 
 
-•	`setup.services['fileName']['functionName']`
+=>	 For importing the function from given path of functions folder of root folder.
 
-=>	For importing the services from services folder of given module’s folder.
+•	`setup.services[‘fileName’][‘functionName’]`
+
+=>	For importing the services from services folder of given root folder.
+
+•	`setup.moduleServices[‘fileName’][‘functionName’]`
+
+=>	For importing the services from services folder of given module’s folder
 
 •	`setup.crons['fileName']['functionName']`
 
@@ -241,6 +270,7 @@ o	app.js
 =>	It defines the files which are going to upload.
 
 #	How to use this setup?
+
 •	As a beginner, first generate folder structure using `framework init` command. It installs all the required packages and generates the folder structure.
 
 •	To create the modules, use `framework create-module`, it will generate the module folder in api which consists of cntrollers, middlewares, services folders along with files in it with dummy data, so that developer can get idea how to write apis or middlewares in those files and it also generates routes.json file.
@@ -251,9 +281,13 @@ o	app.js
 
 •	To create global middleware in particular api, use `framework create-globalMiddleware`, it will create global middleware files and functions and also adds the information in routes.json file.
 
-•	To create services, use `setup.services['fileName']['functionName']`, to import service function from services folder to api.
+•	To create global services, use `setup.services[‘fileName’][‘functionName’]`, to import service function from services folder of root folder to api.
 
-•	To create functions, use `setup.functions['folderName']['fileName']['functionName'](params)`, to import functions from functions folder to api.
+•	To create module level services, use `setup.moduleServices[‘fileName’][‘functionName’]`, to import service function from services folder of module folder to api.
+
+•	To create global functions, use `setup.functions[’folderName’][‘fileName’][‘functionName’](params)`, to import functions from functions folder of root folder to api.
+
+•	To create module level functions, use `setup.moduleFunctions[’folderName’][‘fileName’][‘functionName’](params)`, to import functions from functions of module folder to api.
 
 •	To create crons use `setup.crons['fileName']['functionName']`, to import cron function from crons folder to api and you can start or stop that cron.
 
@@ -269,7 +303,7 @@ err.status = 500; next(err);
 
 •	If you want to see the req-body or req-headers which are being passed when calling the url, you can write that in config.json file of config folder.
 
-•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically.
+•	With `npm start` command, server starts when it is called and using `npm run dev` command, server starts automatically, using `npm run swagger` command, developer can use swagger configuration and setup will provide api documentation automatically.
 
 #	TODOs
 •	We could make more commands for creating functions, services, crons.
@@ -279,7 +313,3 @@ err.status = 500; next(err);
 •	We can create global object for importing the model files to controller files.
 
 •	We can put json web token configurations by default as it is very useful in most of the websites and also like that, the things which are mostly used in production level, that we should put by default, so that developer can directly use that, no need to do any configurations for that. 
-
- 
- 
-
