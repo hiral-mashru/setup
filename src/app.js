@@ -1,4 +1,6 @@
 global.setup = {}
+const chalk = require('chalk')
+try{
 require('../core/crons')
 require('../core/connection').getSequelize()
 .then(res=>{
@@ -87,3 +89,7 @@ setTimeout(function () {
 
 /////////////////////////////////////////////////////////////
 // module.exports = app
+
+} catch(err){
+    console.log(chalk.red('ERROR: ')+err)
+}

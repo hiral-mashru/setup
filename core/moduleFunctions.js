@@ -60,4 +60,4 @@ function assign(obj, keyPath, value) {
     obj[keyPath[lastKeyIndex]] = require(value.split('.js')[0]);
 }
 
-console.log("setuppp",setup.moduleFunctions)
+// console.log("setuppp",setup.moduleFunctions)

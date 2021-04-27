@@ -13,4 +13,4 @@ for (let i of fs.readdirSync(__dirname+`/../services/`)){
 }
 
 
-console.log("services", setup.services)
+// console.log("services", setup.services)
