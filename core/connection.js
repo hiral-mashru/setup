@@ -1,17 +1,11 @@
 const chalk = require('chalk');
-
+require('dotenv').config()
 try {
 
 const fs = require('fs')
 const Sequelize = require('sequelize');
-var config = require('../config/database.json');
+var config = require('../config/database.json')[process.env.NODE_ENV]; 
 const inquirer = require('inquirer')
-
-if(config.development){
-    config = config.development
-} else {
-    config = config.production
-}
 
 async function getSequelize(){
     var sequelize;

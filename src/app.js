@@ -48,7 +48,7 @@ require('../core/connection').getSequelize()
               app[routes.protected[key].method](routes.protected[key].path, routes.protected[key].middlewares, routes.protected[key].globalMiddleware, routes.protected[key].action);
           }
       } catch(err){
-          console.log(chalk.red("ERROR:")+err)
+          console.log(chalk.red("ERROR: Error coming in routes: ")+err)
       }
       app.use(function(req,res,next){
           const err = new Error("Not found")
@@ -75,7 +75,7 @@ require('../core/connection').getSequelize()
 })
 
 process.on('uncaughtException', function (err,origin) {
-  console.log(chalk.red('ERROR:')+process.stderr.fd+','+err+`\nException origin: ${origin}`);
+  console.log(chalk.red('ERROR: ')+process.stderr.fd+','+err+`\nException origin: ${origin}`);
   process.exit(1);
 });
 
