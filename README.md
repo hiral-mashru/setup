@@ -30,7 +30,6 @@
 
 *   `framework`
 
-=> 
 ```
 Usage: cli [options] [command]
 
@@ -81,7 +80,7 @@ Commands:
  
 *	`framework db-config`
 
-=>	It asks for database configuration whether developer wants to do or not. If yes then it asks for development or production field and according to that, it asks for database connection information like username, password, database name, etc… and generates database.json file in config folder.
+=>	It asks for database configuration whether developer wants to do or not. If yes then it asks for development or production environment and according to that, it will automatically write `NODE_ENV=<Node-Environment>` in `.env` file and then it asks for database connection information like username, password, database name, etc… and generates database.json file in config folder.
 
 *	`framework help`
 
