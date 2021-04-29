@@ -28,6 +28,28 @@
 
 #	CLI commands
 
+*   `framework`
+
+=> ```
+Usage: cli [options] [command]
+
+Options:
+  -V, --version              output the version number
+  -h, --help                 display help for command
+
+Commands:
+  create-folder <module>     To create folder.
+  init                       To initialize the basic setup.
+  create-module <module...>  To create module in api folder
+  db-config                  To configure the database.
+  create-api                 To create api.
+  create-middleware          To create module level middleware.
+  create-globalMiddleware    To create global middleware.
+  create-function            To create function.
+  create-service             To create service.
+  help [command]             display help for command
+```
+
 *	`framework init`
 
 =>	It installs the whole folder structure with required configuration files in your system. It asks for database configuration whether developer wants to do or not. If yes then it asks for development or production field and according to that, it asks for database connection information like username, password, database name, etc… and generates database.json file in config folder. 
@@ -349,7 +371,6 @@ Ex.
 ```
 PORT=8000
 NODE_ENV=development
-
 ```
 
 *	With `npm start` command, it first creates the apidocs and then server starts when it is called and using `npm run dev` command, it first creates the apidocs and then server starts automatically, using `npm run docs` command, it creates the apidocs.
