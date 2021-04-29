@@ -89,51 +89,51 @@ Funcationalities of folders and files:
 
 =>	api folder will have modules that will be created by developers, and in those modules, there will be controllers, middlewares and services folders and routes.json file.
 
-	`<moduleName>` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`<moduleName>` 
 
--> In big projects, there may many routes and controllers and middlewares used. So to manage all the actions clearly, we should separate the things in modules. Ex. In E-Commerce website, there are many modules like shipping, payment, admin panel, user profile, products, etc… And each modules will have many routes like in shipping - remainingShipment, completedShipment, In products – addProduct, deleteProduct, editProduct, etc… So to manage all these routes and their actions and HTTP methods, we will separate these fields as a module. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> In big projects, there may many routes and controllers and middlewares used. So to manage all the actions clearly, we should separate the things in modules. Ex. In E-Commerce website, there are many modules like shipping, payment, admin panel, user profile, products, etc… And each modules will have many routes like in shipping - remainingShipment, completedShipment, In products – addProduct, deleteProduct, editProduct, etc… So to manage all these routes and their actions and HTTP methods, we will separate these fields as a module. 
 
 
-o	`controllers`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`controllers`
 
--> controllers folder will have controller files created by developers and the apis will be in object (key-value) format. For handling the error in api, it has `setup.findErr(err)` function, Developer just needs to pass error to that function and it will show the error information.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> controllers folder will have controller files created by developers and the apis will be in object (key-value) format. For handling the error in api, it has `setup.findErr(err)` function, Developer just needs to pass error to that function and it will show the error information.
 
-Ex. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex. 
 ``` 
 module.exports = {
     <API_NAME>: () => {};
 }
- ```
+```
 
-o	`middlewares`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`middlewares`
 
--> middlewares folder will have middleware files used in apis that are declared in controller files, created by developers and the middleware is also in object (key-value) format.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> middlewares folder will have middleware files used in apis that are declared in controller files, created by developers and the middleware is also in object (key-value) format.
 
-Ex. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex. 
 ```
 module.exports = { 
     <MIDDLEWARE_NAME>: () => {};
 }
 ```
 
-o	`services`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`services`
 
--> services folder will have service files used in apis that are declared in controller files, created by developers and the service is also in object (key-value) format. There is a global object named ‘setup’. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> services folder will have service files used in apis that are declared in controller files, created by developers and the service is also in object (key-value) format. There is a global object named ‘setup’. 
 
-Ex.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex.
 ```
 module.exports = { 
     <SERVICE_NAME>: () => {};
 }
 ```
 
-To import service in api from service folder, we need to use `setup.services['<folderName>']['<fileName>']['<functionName>']`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To import service in api from service folder, we need to use `setup.services['<folderName>']['<fileName>']['<functionName>']`
 
-o	`routes.json` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`routes.json` 
 
--> As name suggests, it defines routes. It has json data in which all the endpoints, HTTP method of each endpoint, what action it needs to take place when calling the particular endpoint, which middlewares particular endpoint will use, the endpoint is publicly accessed or not, endpoint should be called from root or not (here root will be the moduleName). These all informations will be saved in json object of json array. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> As name suggests, it defines routes. It has json data in which all the endpoints, HTTP method of each endpoint, what action it needs to take place when calling the particular endpoint, which middlewares particular endpoint will use, the endpoint is publicly accessed or not, endpoint should be called from root or not (here root will be the moduleName). These all informations will be saved in json object of json array. 
 
-Ex: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex: 
 ```
 [{
 	path: 'path/to/api',
@@ -148,60 +148,60 @@ Ex:
 
 *	**config**
 
-	`config.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`config.js`
 
--> This file has configurations for showing the data of which url, HTTP method, http version, status is being called with current date and time in colsole. It uses ‘morgan’ package.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file has configurations for showing the data of which url, HTTP method, http version, status is being called with current date and time in colsole. It uses ‘morgan’ package.
 
-	`config.json`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`config.json`
 
--> This file has json data in which developer can define there req-headers or req-body, where req-body defines what body is going to be passed when url is being called and req-headers defines the headers is used in calling the url, whatever developer wants to see in console when url executes, that developer needs to define there. Config.js will work on this data and it will show information in console.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file has json data in which developer can define there req-headers or req-body, where req-body defines what body is going to be passed when url is being called and req-headers defines the headers is used in calling the url, whatever developer wants to see in console when url executes, that developer needs to define there. Config.js will work on this data and it will show information in console.
 
-	`database.json`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`database.json`
 
--> This file has json data of required information like username, password, database name, host, dialect etc... For connection with database in development and production area.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file has json data of required information like username, password, database name, host, dialect etc... For connection with database in development and production area.
 
-	`fileUpload.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`fileUpload.js`
 
--> This file has configuration for uploading any files to given location. This file uses ‘multer’ package. Developer just needs to write `setup.store({LocationPath})` to store files and  `setup.uploadFile` which is an object to define files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file has configuration for uploading any files to given location. This file uses ‘multer’ package. Developer just needs to write `setup.store({LocationPath})` to store files and  `setup.uploadFile` which is an object to define files.
 
 *	**core**
 
-	`connection.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`connection.js`
 
--> This file establishes the database connection using sequelize. It will ask developer for DB logs with date and time whether developer wants to save logs in files or show logs in console or both.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file establishes the database connection using sequelize. It will ask developer for DB logs with date and time whether developer wants to save logs in files or show logs in console or both.
 
-	`crons.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`crons.js`
 
--> This file runs all the crons files of crons folder created by developer. If any cron is scheduled off and at particular time, it should get on and off, for that developer needs to write `setup.crons['FileName']['cronName']` to call a particular cron.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file runs all the crons files of crons folder created by developer. If any cron is scheduled off and at particular time, it should get on and off, for that developer needs to write `setup.crons['FileName']['cronName']` to call a particular cron.
 
-	`moduleFunctions.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`moduleFunctions.js`
 
--> It has configuration for calling function files from function folder of given module. Developer just needs to write `setup.moduleFunctions[‘folderName’][‘fileName’][‘functionName’]( params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> It has configuration for calling function files from function folder of given module. Developer just needs to write `setup.moduleFunctions[‘folderName’][‘fileName’][‘functionName’]( params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
 
 
-	`functions.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`functions.js`
 
--> It has configuration for calling function files from function folder of root folder. Developer just needs to write `setup.functions[‘folderName’][‘fileName’][‘functionName’](params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> It has configuration for calling function files from function folder of root folder. Developer just needs to write `setup.functions[‘folderName’][‘fileName’][‘functionName’](params1,params2,…,paramsN)` to call the function. Functions folder can have multiple folders and files.
 
-	`migrations.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`migrations.js`
 
--> This file handles all the migrations. If any migration is pending, then it shows the pending migration files to developer and asks to run. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file handles all the migrations. If any migration is pending, then it shows the pending migration files to developer and asks to run. 
 
-	`models.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`models.js`
 
--> It has configuration for calling model files from models folder of db folder of root folder. Developer just needs to write `setup.models[‘fileName’]` to call the model file. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> It has configuration for calling model files from models folder of db folder of root folder. Developer just needs to write `setup.models[‘fileName’]` to call the model file. 
 
-	`routes.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`routes.js`
 
--> This file handles all the routes which are defined in routes.json and maps path to the api, middlewares, global middlewares which is declared in routes.json.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file handles all the routes which are defined in routes.json and maps path to the api, middlewares, global middlewares which is declared in routes.json.
 
-	`moduleServices.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`moduleServices.js`
 
--> This file handles the configurations of services of given module. Developer can access the service files in api via `setup.moduleServices[‘fileName’][‘serviceName’]`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file handles the configurations of services of given module. Developer can access the service files in api via `setup.moduleServices[‘fileName’][‘serviceName’]`
 
-	`services.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	`services.js`
 
--> This file handles the configurations of services of root folder. Developer can access the service files in api via `setup.services[‘fileName’][‘serviceName’]` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This file handles the configurations of services of root folder. Developer can access the service files in api via `setup.services[‘fileName’][‘serviceName’]` 
 
 *	**crons**
 
@@ -216,17 +216,17 @@ module.exports = {
 
 *	**db**
 
-o	`migrations`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`migrations`
 
--> This folder includes multiple migration files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This folder includes multiple migration files.
 
-o	`models`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`models`
 
--> This folder includes multiple model files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This folder includes multiple model files.
 
-o	`seeders`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`seeders`
 
--> This folder includes seeder files.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This folder includes seeder files.
 
 *	**dbLogs** 
 
@@ -250,9 +250,9 @@ o	`seeders`
 
 *	**src**
 
-o	`app.js`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;o	`app.js`
 
--> This is the root file where the process starts. It imports all the required files and route calling starts from here. It includes error handler also which handles all the errors so that app doesn’t get crashed. It has apidocs configuration also for api documentation.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-> This is the root file where the process starts. It imports all the required files and route calling starts from here. It includes error handler also which handles all the errors so that app doesn’t get crashed. It has apidocs configuration also for api documentation.
 
 *	**uploads** 
 
@@ -362,3 +362,5 @@ NODE_ENV=development
 *	We can put json web token configurations by default as it is very useful in most of the websites and also like that, the things which are mostly used in production level, that we should put by default, so that developer can directly use that, no need to do any configurations for that. 
 
  
+ 
+
