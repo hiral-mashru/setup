@@ -6,6 +6,9 @@ const fs = require('fs')
 const Sequelize = require('sequelize');
 var config = require('../config/database.json')[process.env.NODE_ENV]; 
 const inquirer = require('inquirer')
+const path = require('path')
+
+fs.mkdirSync(path.join(process.cwd(),'dbLogs'), { recursive: true })
 
 async function getSequelize(){
     var sequelize;

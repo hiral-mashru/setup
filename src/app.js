@@ -1,5 +1,10 @@
 global.setup = {}
 const chalk = require('chalk')
+const fs = require('fs')
+const path = require('path')
+fs.mkdirSync(path.join(process.cwd(),'db','migrations'), { recursive: true })
+fs.mkdirSync(path.join(process.cwd(),'db','seeders'), { recursive: true })
+
 try{
 require('../core/crons')
 require('../core/connection').getSequelize()
