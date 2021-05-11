@@ -1,0 +1,86 @@
+[
+ {
+  "path": "/build",
+  "method": "post",
+  "action": "DataInsertion.build",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/create",
+  "method": "post",
+  "action": "DataInsertion.create",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/createLimited",
+  "method": "post",
+  "action": "DataInsertion.createLimited",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/update/:id",
+  "method": "put",
+  "action": "DataUpdation.update",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/save/:id",
+  "method": "put",
+  "action": "DataUpdation.save",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/destroy/:id",
+  "method": "delete",
+  "action": "DataDeletion.destroy",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/bulkCreate",
+  "method": "post",
+  "action": "DataInsertion.bulkCreate",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/bulkUpdate",
+  "method": "put",
+  "action": "DataUpdation.bulkUpdate",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/bulkDelete",
+  "method": "delete",
+  "action": "DataDeletion.bulkDelete",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/reload",
+  "method": "get",
+  "action": "FindData.reload",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/increment/:id",
+  "method": "get",
+  "action": "FindData.increment",
+  "public": true,
+  "root": false
+ },
+ {
+  "path": "/decrement/:id",
+  "method": "get",
+  "action": "FindData.decrement",
+  "public": true,
+  "root": false
+ }
+]

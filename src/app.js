@@ -33,11 +33,13 @@ require('../core/connection').getSequelize()
       require('../core/moduleFunctions')
       require('../core/moduleServices')
       require('../core/services')
+      require('../core/models')
       const chalk = require('chalk')
       const bodyParser=require('body-parser');
       const cookieParser=require('cookie-parser');
       const routes = require('../core/routes');
       const path = require('path')
+      const createError = require('http-errors');
 
       app.use(bodyParser.json());
       app.use(bodyParser.urlencoded({extended:true}));
@@ -55,10 +57,8 @@ require('../core/connection').getSequelize()
       } catch(err){
           console.log(chalk.red("ERROR: Error coming in routes: ")+err)
       }
-      app.use(function(req,res,next){
-          const err = new Error("Not found")
-          err.status = 404
-          next(err)
+      app.use(async (req,res,next) => {
+        next(createError.NotFound())
       })
 
       app.use(function (err, req, res, next) {

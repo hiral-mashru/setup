@@ -1,0 +1,622 @@
+10:53:38 AM
+Executing (default): SELECT 1+1 AS result
+10:53:38 AM
+Executing (default): SELECT 1+1 AS result
+10:53:38 AM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+10:53:38 AM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+10:53:38 AM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+10:53:46 AM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+11:30:19 AM
+Executing (default): SELECT 1+1 AS result
+11:30:19 AM
+Executing (default): SELECT 1+1 AS result
+11:30:19 AM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+11:30:19 AM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+11:30:19 AM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+11:31:23 AM
+Executing (default): SELECT 1+1 AS result
+11:31:23 AM
+Executing (default): SELECT 1+1 AS result
+11:31:23 AM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+11:31:24 AM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+11:31:24 AM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+11:50:57 AM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+11:57:08 AM
+Executing (default): SELECT 1+1 AS result
+11:57:08 AM
+Executing (default): SELECT 1+1 AS result
+11:57:08 AM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+11:57:08 AM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+11:57:08 AM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:10:43 PM
+Executing (default): SELECT 1+1 AS result
+12:10:43 PM
+Executing (default): SELECT 1+1 AS result
+12:10:43 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:10:43 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:10:43 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:10:50 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+12:13:32 PM
+Executing (default): INSERT INTO `students` (`name`,`updatedAt`,`createdAt`) VALUES (?,?,?);
+12:42:04 PM
+Executing (default): SELECT 1+1 AS result
+12:42:04 PM
+Executing (default): SELECT 1+1 AS result
+12:42:04 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:42:04 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:42:04 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:43:00 PM
+Executing (default): SELECT 1+1 AS result
+12:43:00 PM
+Executing (default): SELECT 1+1 AS result
+12:43:00 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:43:00 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:43:00 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:45:18 PM
+Executing (default): SELECT 1+1 AS result
+12:45:18 PM
+Executing (default): SELECT 1+1 AS result
+12:45:18 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:45:18 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:45:18 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:45:32 PM
+Executing (default): SELECT 1+1 AS result
+12:45:32 PM
+Executing (default): SELECT 1+1 AS result
+12:45:32 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:45:32 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:45:32 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:45:42 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:46:35 PM
+Executing (default): SELECT 1+1 AS result
+12:46:35 PM
+Executing (default): SELECT 1+1 AS result
+12:46:35 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:46:36 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:46:36 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:46:43 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:48:26 PM
+Executing (default): SELECT 1+1 AS result
+12:48:26 PM
+Executing (default): SELECT 1+1 AS result
+12:48:26 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:48:26 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:48:26 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:48:35 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:48:35 PM
+Executing (default): UPDATE `students` SET `name`=?,`email`=?,`updatedAt`=? WHERE `id` = '6'
+12:49:05 PM
+Executing (default): SELECT 1+1 AS result
+12:49:05 PM
+Executing (default): SELECT 1+1 AS result
+12:49:05 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:49:05 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:49:05 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:49:11 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:49:12 PM
+Executing (default): UPDATE `students` SET `name`=?,`email`=?,`updatedAt`=? WHERE `id` = '6'
+12:49:53 PM
+Executing (default): SELECT 1+1 AS result
+12:49:53 PM
+Executing (default): SELECT 1+1 AS result
+12:49:53 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:49:53 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:49:53 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:50:00 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:50:00 PM
+Executing (default): UPDATE `students` SET `name`=?,`email`=?,`updatedAt`=? WHERE `id` = '6'
+12:53:43 PM
+Executing (default): SELECT 1+1 AS result
+12:53:43 PM
+Executing (default): SELECT 1+1 AS result
+12:53:43 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:53:43 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:53:43 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:53:56 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:54:35 PM
+Executing (default): SELECT 1+1 AS result
+12:54:35 PM
+Executing (default): SELECT 1+1 AS result
+12:54:35 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:54:35 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:54:35 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+12:54:45 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+12:54:45 PM
+Executing (default): UPDATE `students` SET `name`=?,`email`=?,`updatedAt`=? WHERE `id` = '6'
+12:59:23 PM
+Executing (default): SELECT 1+1 AS result
+12:59:23 PM
+Executing (default): SELECT 1+1 AS result
+12:59:23 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+12:59:23 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+12:59:23 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:00:22 PM
+Executing (default): SELECT 1+1 AS result
+1:00:22 PM
+Executing (default): SELECT 1+1 AS result
+1:00:22 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:00:22 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:00:22 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:00:37 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt` FROM `students` AS `students` WHERE `students`.`id` = '6' LIMIT 1;
+1:01:41 PM
+Executing (default): SELECT 1+1 AS result
+1:01:41 PM
+Executing (default): SELECT 1+1 AS result
+1:01:41 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:01:41 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:01:41 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:28:47 PM
+Executing (default): SELECT 1+1 AS result
+1:28:47 PM
+Executing (default): SELECT 1+1 AS result
+1:28:47 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:28:47 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:28:47 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:31:52 PM
+Executing (default): SELECT 1+1 AS result
+1:31:52 PM
+Executing (default): SELECT 1+1 AS result
+1:31:52 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:31:52 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:31:52 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:32:43 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '8') LIMIT 1;
+1:34:03 PM
+Executing (default): SELECT 1+1 AS result
+1:34:03 PM
+Executing (default): SELECT 1+1 AS result
+1:34:03 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:34:03 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:34:03 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:34:10 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '8') LIMIT 1;
+1:48:44 PM
+Executing (default): SELECT 1+1 AS result
+1:48:44 PM
+Executing (default): SELECT 1+1 AS result
+1:48:44 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:48:44 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:48:44 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:48:55 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:48:55 PM
+Executing (default): UPDATE `students` SET `name`=?,`email`=?,`updatedAt`=? WHERE (`deletedAt` IS NULL AND `id` = '4')
+1:49:12 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:49:57 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:49:57 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `id` = '4'
+1:51:10 PM
+Executing (default): SELECT 1+1 AS result
+1:51:10 PM
+Executing (default): SELECT 1+1 AS result
+1:51:10 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:51:10 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:51:10 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:51:21 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:53:01 PM
+Executing (default): SELECT 1+1 AS result
+1:53:01 PM
+Executing (default): SELECT 1+1 AS result
+1:53:01 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:53:01 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:53:01 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:53:15 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:53:50 PM
+Executing (default): SELECT 1+1 AS result
+1:53:50 PM
+Executing (default): SELECT 1+1 AS result
+1:53:50 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+1:53:50 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+1:53:50 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+1:54:03 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '4') LIMIT 1;
+1:54:16 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = '3') LIMIT 1;
+1:54:16 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `id` = '3'
+1:54:17 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `id` = '3'
+6:13:19 PM
+Executing (default): SELECT 1+1 AS result
+6:13:19 PM
+Executing (default): SELECT 1+1 AS result
+6:13:19 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:13:19 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:13:19 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:13:33 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'barfooz','barfooz@gmail.com','2021-05-11 12:43:33','2021-05-11 12:43:33'),(NULL,'foo','foo@gmail.com','2021-05-11 12:43:33','2021-05-11 12:43:33'),(NULL,'bar','bar@gmail.com','2021-05-11 12:43:33','2021-05-11 12:43:33');
+6:13:34 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:16:06 PM
+Executing (default): SELECT 1+1 AS result
+6:16:06 PM
+Executing (default): SELECT 1+1 AS result
+6:16:06 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:16:06 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:16:06 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:16:31 PM
+Executing (default): INSERT INTO `students` (`name`,`createdAt`,`updatedAt`) VALUES ('fooz','2021-05-11 12:46:31','2021-05-11 12:46:31'),('foo','2021-05-11 12:46:31','2021-05-11 12:46:31'),('bar','2021-05-11 12:46:31','2021-05-11 12:46:31');
+6:16:31 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:17:45 PM
+Executing (default): SELECT 1+1 AS result
+6:17:45 PM
+Executing (default): SELECT 1+1 AS result
+6:17:45 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:17:45 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:17:45 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:19:47 PM
+Executing (default): SELECT 1+1 AS result
+6:19:47 PM
+Executing (default): SELECT 1+1 AS result
+6:19:47 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:19:47 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:19:47 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:19:55 PM
+Executing (default): INSERT INTO `students` (`name`,`createdAt`,`updatedAt`) VALUES ('fooz','2021-05-11 12:49:55','2021-05-11 12:49:55'),('foo','2021-05-11 12:49:55','2021-05-11 12:49:55'),('bar','2021-05-11 12:49:55','2021-05-11 12:49:55');
+6:19:55 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:24:06 PM
+Executing (default): SELECT 1+1 AS result
+6:24:06 PM
+Executing (default): SELECT 1+1 AS result
+6:24:06 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:24:06 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:24:06 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:24:13 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:54:13','2021-05-11 12:54:13'),(NULL,'foo','foo@gmail.com','2021-05-11 12:54:13','2021-05-11 12:54:13'),(NULL,'bar','bar@gmail.com','2021-05-11 12:54:13','2021-05-11 12:54:13');
+6:24:40 PM
+Executing (default): SELECT 1+1 AS result
+6:24:40 PM
+Executing (default): SELECT 1+1 AS result
+6:24:40 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:24:40 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:24:40 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:24:46 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:54:46','2021-05-11 12:54:46'),(NULL,'foo','foo@gmail.com','2021-05-11 12:54:46','2021-05-11 12:54:46'),(NULL,'bar','bar@gmail.com','2021-05-11 12:54:46','2021-05-11 12:54:46');
+6:24:46 PM
+Executing (default): UPDATE `students` SET `name`=?,`updatedAt`=? WHERE (`deletedAt` IS NULL AND `email` = ?)
+6:24:46 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:26:06 PM
+Executing (default): SELECT 1+1 AS result
+6:26:06 PM
+Executing (default): SELECT 1+1 AS result
+6:26:06 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:26:06 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:26:06 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:26:12 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:56:11','2021-05-11 12:56:11'),(NULL,'foo','foo@gmail.com','2021-05-11 12:56:11','2021-05-11 12:56:11'),(NULL,'bar','bar@gmail.com','2021-05-11 12:56:11','2021-05-11 12:56:11');
+6:26:12 PM
+Executing (default): UPDATE `students` SET `name`=?,`updatedAt`=? WHERE (`deletedAt` IS NULL AND `email` = ?)
+6:26:12 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:26:28 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:56:28','2021-05-11 12:56:28'),(NULL,'foo','foo@gmail.com','2021-05-11 12:56:28','2021-05-11 12:56:28'),(NULL,'bar','bar@gmail.com','2021-05-11 12:56:28','2021-05-11 12:56:28');
+6:26:28 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `email` = ?
+6:26:29 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:26:58 PM
+Executing (default): SELECT 1+1 AS result
+6:26:58 PM
+Executing (default): SELECT 1+1 AS result
+6:26:58 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:26:58 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:26:58 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:27:54 PM
+Executing (default): SELECT 1+1 AS result
+6:27:54 PM
+Executing (default): SELECT 1+1 AS result
+6:27:54 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:27:54 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:27:54 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:28:00 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:58:00','2021-05-11 12:58:00'),(NULL,'foo','foo@gmail.com','2021-05-11 12:58:00','2021-05-11 12:58:00'),(NULL,'bar','bar@gmail.com','2021-05-11 12:58:00','2021-05-11 12:58:00');
+6:28:01 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `email` = ?
+6:28:01 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:28:32 PM
+Executing (default): SELECT 1+1 AS result
+6:28:32 PM
+Executing (default): SELECT 1+1 AS result
+6:28:32 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:28:32 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:28:32 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:28:39 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 12:58:39','2021-05-11 12:58:39'),(NULL,'foo','foo@gmail.com','2021-05-11 12:58:39','2021-05-11 12:58:39'),(NULL,'bar','bar@gmail.com','2021-05-11 12:58:39','2021-05-11 12:58:39');
+6:28:39 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `email` = ?
+6:28:39 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:31:05 PM
+Executing (default): SELECT 1+1 AS result
+6:31:05 PM
+Executing (default): SELECT 1+1 AS result
+6:31:05 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:31:05 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:31:05 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:31:41 PM
+Executing (default): INSERT INTO `students` (`id`,`name`,`email`,`createdAt`,`updatedAt`) VALUES (NULL,'fooz','fooz@gmail.com','2021-05-11 13:01:40','2021-05-11 13:01:40'),(NULL,'foo','foo@gmail.com','2021-05-11 13:01:40','2021-05-11 13:01:40'),(NULL,'bar','bar@gmail.com','2021-05-11 13:01:40','2021-05-11 13:01:40');
+6:31:41 PM
+Executing (default): UPDATE `students` SET `deletedAt`=? WHERE `deletedAt` IS NULL AND `email` = ?
+6:31:41 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL);
+6:48:00 PM
+Executing (default): SELECT 1+1 AS result
+6:48:00 PM
+Executing (default): SELECT 1+1 AS result
+6:48:00 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:48:00 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:48:00 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+6:48:29 PM
+Executing (default): SELECT 1+1 AS result
+6:48:29 PM
+Executing (default): SELECT 1+1 AS result
+6:48:29 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+6:48:29 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+6:48:30 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+7:02:56 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+7:02:56 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+7:02:56 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+7:03:16 PM
+Executing (default): SELECT 1+1 AS result
+7:03:16 PM
+Executing (default): SELECT 1+1 AS result
+7:03:16 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+7:03:16 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+7:03:16 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+7:03:24 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`name` = 'user') LIMIT 1;
+7:03:25 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = 1);
+7:03:56 PM
+Executing (default): SELECT 1+1 AS result
+7:03:56 PM
+Executing (default): SELECT 1+1 AS result
+7:03:56 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+7:03:56 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+7:03:56 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+7:04:18 PM
+Executing (default): SELECT `id`, `name`, `email`, `createdAt`, `updatedAt`, `deletedAt` FROM `students` AS `students` WHERE (`students`.`deletedAt` IS NULL AND `students`.`id` = 1);
+7:04:18 PM
+Executing (default): UPDATE `students` SET `my-integer-field`=`my-integer-field`+ 2,`my-very-other-field`=`my-very-other-field`+ 3,`updatedAt`='2021-05-11 13:34:18' WHERE `id` = 1
+7:08:21 PM
+Executing (default): SELECT 1+1 AS result
+7:08:21 PM
+Executing (default): SELECT 1+1 AS result
+7:08:21 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+7:08:21 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+7:08:21 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+7:19:02 PM
+Executing (default): SELECT 1+1 AS result
+7:19:02 PM
+Executing (default): SELECT 1+1 AS result
+7:19:02 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+7:19:02 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+7:19:02 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:01:09 PM
+Executing (default): SELECT 1+1 AS result
+8:01:09 PM
+Executing (default): SELECT 1+1 AS result
+8:01:09 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+8:01:09 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+8:01:09 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:02:33 PM
+Executing (default): SELECT 1+1 AS result
+8:02:33 PM
+Executing (default): SELECT 1+1 AS result
+8:02:33 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+8:02:33 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+8:02:33 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:04:07 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:04:07 PM
+Executing (default): UPDATE `Products` SET `amount`=`amount`+ 2,`amount2`=`amount2`+ 3,`updatedAt`='2021-05-11 14:34:07' WHERE `id` = 1
+8:04:07 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:05:59 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:05:59 PM
+Executing (default): UPDATE `Products` SET `amount`=`amount`- 2,`amount2`=`amount2`- 3,`updatedAt`='2021-05-11 14:35:59' WHERE `id` = 1
+8:05:59 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:07:30 PM
+Executing (default): SELECT 1+1 AS result
+8:07:30 PM
+Executing (default): SELECT 1+1 AS result
+8:07:30 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+8:07:30 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+8:07:30 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:08:38 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:08:38 PM
+Executing (default): UPDATE `Products` SET `amount`=`amount`- 2,`amount2`=`amount2`- 3,`updatedAt`='2021-05-11 14:38:38' WHERE `id` = 1
+8:08:38 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 1;
+8:08:59 PM
+Executing (default): SELECT 1+1 AS result
+8:08:59 PM
+Executing (default): SELECT 1+1 AS result
+8:08:59 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+8:08:59 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+8:08:59 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:23:44 PM
+Executing (default): SELECT 1+1 AS result
+8:23:44 PM
+Executing (default): SELECT 1+1 AS result
+8:23:44 PM
+Executing (default): CREATE TABLE IF NOT EXISTS `SequelizeMeta` (`name` VARCHAR(255) NOT NULL UNIQUE , PRIMARY KEY (`name`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+8:23:44 PM
+Executing (default): SHOW INDEX FROM `SequelizeMeta`
+8:23:44 PM
+Executing (default): SELECT `name` FROM `SequelizeMeta` AS `SequelizeMeta` ORDER BY `SequelizeMeta`.`name` ASC;
+8:23:53 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = '2';
+8:23:53 PM
+Executing (default): UPDATE `Products` SET `amount`=`amount`- 2,`amount2`=`amount2`- 3,`updatedAt`='2021-05-11 14:53:53' WHERE `id` = 2
+8:23:53 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 2;
+8:24:16 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = '3';
+8:24:16 PM
+Executing (default): UPDATE `Products` SET `amount`=`amount`+ 2,`amount2`=`amount2`+ 3,`updatedAt`='2021-05-11 14:54:16' WHERE `id` = 3
+8:24:16 PM
+Executing (default): SELECT `id`, `name`, `amount`, `amount2`, `createdAt`, `updatedAt` FROM `Products` AS `Product` WHERE `Product`.`id` = 3;
